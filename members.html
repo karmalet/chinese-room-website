@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>团队成员 Team Members - 中文屋 Chinese Room</title>
+  <link rel="stylesheet" href="css/style.css?v=20260423-4" />
+  <style>
+    .member-columns {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-rows: repeat(5, auto);
+      gap: 10px 42px;
+      align-items: start;
+      justify-content: start;
+      list-style: disc;
+      padding-left: 22px;
+      margin: 0;
+    }
+
+    .member-columns li {
+      break-inside: avoid;
+      white-space: nowrap;
+    }
+
+    .pi-card {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .pi-card img {
+      width: 100%;
+      max-width: 240px;
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .detail-link-wrap {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 18px;
+    }
+
+    .detail-link {
+      font-weight: 600;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .detail-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 960px) {
+      .member-columns {
+        grid-auto-flow: row;
+        grid-template-rows: none;
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .pi-card {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="images/chinese%20room%20logo.png?v=20260422-2" alt="中文屋 Logo" />
+        <span class="brand-text">
+          <span class="brand-cn">中文屋</span>
+          <span class="brand-en">Chinese Room</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">首页 Homepage</a>
+        <a href="members.html">团队成员 Team Members</a>
+        <a href="publications.html">研究著作 Publications</a>
+        <a href="applications.html">应用成果 Applications</a>
+        <a href="tasks.html">评测任务 Shared Tasks</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-hero">
+    <div class="container">
+      <h1>团队成员 Team Members</h1>
+    </div>
+  </main>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2>袁毓林教授 Prof. YUAN Yulin</h2>
+        <p>团队带头人 Primary Investigator</p>
+      </div>
+
+      <div class="card reveal">
+        <div class="pi-card">
+          <div>
+            <img src="images/yuanyulin.jpg" alt="袁毓林教授照片" />
+          </div>
+
+          <div>
+            <!-- <h3>个人简介 Profile</h3> -->
+            <p style="text-align: justify;">袁毓林，男，1962年生，澳门大学人文学院中国语言文学系讲座教授、系主任，曾任北京大学中文系教授、博士生导师。</p>
+            <p style="text-align: justify;">Yuan Yulin, male, born in 1962, is Chair Professor and Head of the Department of Chinese Language and Literature, Faculty of Arts and Humanities, University of Macau. He previously served as Professor and doctoral supervisor in the Department of Chinese Language and Literature at Peking University.</p>
+            <p><strong>研究方向：</strong>理论语言学、汉语语言学、计算语言学、中文信息处理</p>
+            <p><strong>Research Interests:</strong> Theoretical Linguistics, Chinese Linguistics, Computational Linguistics, Chinese Language Information Processing</p>
+            <p><strong>邮箱 Email:</strong> yulinyuan@um.edu.mo</p>
+            <div class="detail-link-wrap">
+              <a class="detail-link" href="team.html">详细介绍 More Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2>合作者 Collaborators</h2>
+        <p>按姓氏首字母排序 Sorted alphabetically by surname </p>
+      </div>
+
+      <div class="card reveal">
+        <ul class="member-columns">
+          <li>CHEN Zhenyu 陈振宇</li>
+          <li>HUA Zheng 花正</li>
+          <li>LI Bin 李斌</li>
+          <li>LI Xiang 李湘</li>
+          <li>LU Dawei 卢达威</li>
+          <li>SHI Chunhong 施春宏</li>
+          <li>SUN Xiaoxue 孙晓雪</li>
+          <li>WANG Longyue 王龙跃</li>
+          <li>XU Jie 徐杰</li>
+          <li>ZHANG Xiusong 张秀松</li>
+          <li>待更新</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2>博士生 Ph.D. Students</h2>
+      </div>
+
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" type="button">All</button>
+        <button class="filter-btn" type="button">2000s</button>
+        <button class="filter-btn" type="button">2010s</button>
+        <button class="filter-btn" type="button">2020s</button>
+      </div>
+
+      <div class="card reveal">
+        <ul class="member-columns">
+          <li><a class="member-profile-link" href="people/student-cv.html?id=chen-yang">CHEN Yang 陈阳</a></li>
+          <li><a class="member-profile-link" href="people/student-cv.html?id=cong-guanliang">CONG Guanliang 丛冠良</a></li>
+          <li><a class="member-profile-link" href="people/student-cv.html?id=xu-mai">XU Mai 徐劢</a></li>
+          <li><a class="member-profile-link" href="people/student-cv.html?id=xun-tianqi">XUN Tianqi 寻天琦</a></li>
+          <li><a class="member-profile-link" href="people/student-cv.html?id=zhou-liwei">ZHOU Liwei 周立炜</a></li>
+          <li>待更新</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2>硕士生 Master Students</h2>
+      </div>
+
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" type="button">All</button>
+        <button class="filter-btn" type="button">1990s</button>
+        <button class="filter-btn" type="button">2000s</button>
+        <button class="filter-btn" type="button">2010s</button>
+        <button class="filter-btn" type="button">2020s</button>
+      </div>
+
+      <div class="card reveal">
+        <ul class="clean-list">
+          <li><a class="member-profile-link" href="people/student-cv.html?id=li-changling">LI Changling 李昌玲</a></li>
+          <li><a class="member-profile-link" href="people/student-cv.html?id=li-junhou">LI Junhou 李君厚</a></li>
+          <li><a class="member-profile-link" href="people/student-cv.html?id=li-zehua">LI Zehua 李泽华</a></li>
+          <li><a class="member-profile-link" href="people/student-cv.html?id=liu-ruoxi">LIU Ruoxi 刘若曦</a></li>
+          <li><a class="member-profile-link" href="people/student-cv.html?id=tao-suwen">TAO Suwen 陶苏文</a></li>
+          <li><a class="member-profile-link" href="people/student-cv.html?id=wang-yueyao">WANG Yueyao 王月瑶</a></li>
+          <li><a class="member-profile-link" href="people/student-cv.html?id=wu-junchao">WU Junchao 吴俊潮</a></li>
+          <li><a class="member-profile-link" href="people/student-cv.html?id=yang-yang">YANG Yang 阳阳</a></li>
+          <li><a class="member-profile-link" href="people/student-cv.html?id=zhu-zhixin">ZHU Zhixin 朱之鑫</a></li>
+          <li>待更新</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <h3>中文屋 Chinese Room</h3>
+        <p>袁毓林教授研究团队主页 Homepage of Prof. YUAN Yulin's research team</p>
+      </div>
+      <p>© 2026 Chinese Room. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=20260423-4"></script>
+</body>
+</html>

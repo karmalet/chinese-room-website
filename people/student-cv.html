@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student CV - 中文屋 Chinese Room</title>
+  <link rel="stylesheet" href="../css/style.css?v=20260423-4" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../index.html">
+        <img class="brand-logo" src="../images/chinese%20room%20logo.png?v=20260422-2" alt="中文屋 Logo" />
+        <span class="brand-text">
+          <span class="brand-cn">中文屋</span>
+          <span class="brand-en">Chinese Room</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+      <nav class="site-nav" id="siteNav">
+        <a href="../index.html">首页 Homepage</a>
+        <a href="../members.html" class="active">团队成员 Team Members</a>
+        <a href="../publications.html">研究著作 Publications</a>
+        <a href="../applications.html">应用成果 Applications</a>
+        <a href="../tasks.html">评测任务 Shared Tasks</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-hero cv-hero">
+    <div class="container cv-hero-grid">
+      <div>
+        <p class="section-kicker" id="studentRoleKicker">Student CV</p>
+        <h1 id="studentName">Student Name</h1>
+        <p class="page-subtitle" id="studentRole">Student</p>
+      </div>
+    </div>
+  </main>
+
+  <section class="section">
+    <div class="container cv-layout">
+      <aside class="cv-sidebar reveal">
+        <figure class="cv-photo-wrap">
+          <img id="studentPhoto" src="" alt="个人照片" />
+          <figcaption id="studentInitials">CV</figcaption>
+        </figure>
+        <h2 id="sidebarName">Student Name</h2>
+        <p id="sidebarRole">Student</p>
+        <div class="cv-contact-list">
+          <a id="studentEmail" href="#">Email</a>
+          <a id="studentWebsite" href="#" target="_blank" rel="noopener">Personal Website</a>
+          <a id="studentGithub" href="#" target="_blank" rel="noopener">GitHub</a>
+          <a id="studentScholar" href="#" target="_blank" rel="noopener">Google Scholar</a>
+        </div>
+      </aside>
+
+      <div class="cv-main">
+        <article class="card reveal cv-card" id="about">
+          <h2>个人简介 About</h2>
+          <p id="aboutText">请在模板中填写个人简介，例如教育背景、导师、研究方向和联系方式说明。</p>
+        </article>
+
+        <article class="card reveal cv-card" id="research">
+          <h2>研究概览 Research Overview</h2>
+          <p id="researchText">请在这里填写研究主题、核心问题、代表性工作和未来计划。</p>
+        </article>
+
+        <article class="card reveal cv-card" id="news">
+          <h2>动态 News</h2>
+          <ul class="cv-list" id="newsList">
+            <li>待补充。</li>
+          </ul>
+        </article>
+
+        <article class="card reveal cv-card" id="publications">
+          <h2>论文 Publications</h2>
+          <div id="publicationList">
+            <p>待补充。</p>
+          </div>
+        </article>
+
+        <article class="card reveal cv-card" id="services">
+          <h2>学术服务 Services</h2>
+          <ul class="cv-list" id="serviceList">
+            <li>待补充。</li>
+          </ul>
+        </article>
+
+        <article class="card reveal cv-card" id="experience">
+          <h2>经历 Experience</h2>
+          <ul class="cv-list" id="experienceList">
+            <li>待补充。</li>
+          </ul>
+        </article>
+
+        <article class="card reveal cv-card" id="skills">
+          <h2>专业技能 Professional Skills</h2>
+          <ul class="cv-list" id="skillList">
+            <li>待补充。</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <h3>中文屋 Chinese Room</h3>
+        <p>袁毓林教授研究团队主页 Homepage of Prof. YUAN Yulin's research team</p>
+      </div>
+      <p>© 2026 Chinese Room. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const studentProfiles = {
+      "chen-yang": {
+        name: "CHEN Yang 陈阳",
+        role: "Ph.D. Student",
+        about: "请填写陈阳的个人简介。"
+      },
+      "cong-guanliang": {
+        name: "CONG Guanliang 丛冠良",
+        role: "Ph.D. Student",
+        about: "请填写丛冠良的个人简介。"
+      },
+      "xu-mai": {
+        name: "XU Mai 徐劢",
+        role: "Ph.D. Student",
+        about: "请填写徐劢的个人简介。"
+      },
+      "xun-tianqi": {
+        name: "XUN Tianqi 寻天琦",
+        role: "Ph.D. Student",
+        about: "请填写寻天琦的个人简介。"
+      },
+      "zhou-liwei": {
+        name: "ZHOU Liwei 周立炜",
+        role: "Ph.D. Student",
+        about: "请填写周立炜的个人简介。"
+      },
+      "li-changling": {
+        name: "LI Changling 李昌玲",
+        role: "Master Student",
+        about: "请填写李昌玲的个人简介。"
+      },
+      "li-junhou": {
+        name: "LI Junhou 李君厚",
+        role: "Master Student",
+        about: "请填写李君厚的个人简介。"
+      },
+      "li-zehua": {
+        name: "LI Zehua 李泽华",
+        role: "Master Student",
+        about: "请填写李泽华的个人简介。"
+      },
+      "liu-ruoxi": {
+        name: "LIU Ruoxi 刘若曦",
+        role: "Master Student",
+        about: "请填写刘若曦的个人简介。"
+      },
+      "tao-suwen": {
+        name: "TAO Suwen 陶苏文",
+        role: "Master Student",
+        about: "请填写陶苏文的个人简介。"
+      },
+      "wang-yueyao": {
+        name: "WANG Yueyao 王月瑶",
+        role: "Master Student",
+        about: "请填写王月瑶的个人简介。"
+      },
+      "wu-junchao": {
+        name: "WU Junchao 吴俊潮",
+        role: "Master Student",
+        about: "请填写吴俊潮的个人简介。"
+      },
+      "yang-yang": {
+        name: "YANG Yang 阳阳",
+        role: "Master Student",
+        about: "请填写阳阳的个人简介。"
+      },
+      "zhu-zhixin": {
+        name: "ZHU Zhixin 朱之鑫",
+        role: "Master Student",
+        about: "请填写朱之鑫的个人简介。"
+      }
+    };
+
+    function setText(id, value) {
+      const element = document.getElementById(id);
+      if (element) element.textContent = value;
+    }
+
+    function setOptionalLink(id, value, label) {
+      const element = document.getElementById(id);
+      if (!element) return;
+      if (!value) {
+        element.textContent = label;
+        element.removeAttribute("href");
+        element.classList.add("is-disabled");
+        return;
+      }
+      element.textContent = label || value;
+      element.href = value;
+      element.classList.remove("is-disabled");
+    }
+
+    function renderProfile() {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("id") || "chen-yang";
+      const profile = studentProfiles[id] || {
+        name: "Student Name",
+        role: "Student",
+        about: "请在模板中填写个人简介。"
+      };
+
+      document.title = `${profile.name} - 中文屋 Chinese Room`;
+      setText("studentName", profile.name);
+      setText("sidebarName", profile.name);
+      setText("studentRole", profile.role);
+      setText("sidebarRole", profile.role);
+      setText("studentRoleKicker", profile.role);
+      setText("aboutText", profile.about);
+
+      const initials = profile.name
+        .split(" ")
+        .filter(Boolean)
+        .slice(0, 2)
+        .map((part) => part[0])
+        .join("");
+      setText("studentInitials", initials || "CV");
+
+      const photo = document.getElementById("studentPhoto");
+      if (photo) {
+        if (profile.photo) {
+          photo.src = profile.photo;
+          photo.alt = `${profile.name} 个人照片`;
+          photo.classList.remove("is-empty");
+        } else {
+          photo.removeAttribute("src");
+          photo.alt = "个人照片待补充";
+          photo.classList.add("is-empty");
+        }
+      }
+
+      setOptionalLink("studentEmail", profile.email ? `mailto:${profile.email}` : "", profile.email || "Email");
+      setOptionalLink("studentWebsite", profile.website || "", "Personal Website");
+      setOptionalLink("studentGithub", profile.github || "", "GitHub");
+      setOptionalLink("studentScholar", profile.scholar || "", "Google Scholar");
+    }
+
+    renderProfile();
+  </script>
+  <script src="../js/main.js?v=20260423-4"></script>
+</body>
+</html>
